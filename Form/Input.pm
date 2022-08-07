@@ -6,7 +6,7 @@ use warnings;
 use Error::Pure qw(err);
 use List::Util qw(none);
 use Mo qw(build is);
-use Mo::utils qw(check_bool check_required);
+use Mo::utils qw(check_bool check_number check_required);
 use Readonly;
 
 Readonly::Array our @TYPES => qw(checkbox submit text);
@@ -37,6 +37,10 @@ has required => (
 	is => 'ro',
 );
 
+has size => (
+	is => 'ro',
+);
+
 has value => (
 	is => 'ro',
 );
@@ -53,6 +57,9 @@ sub BUILD {
 
 	# Check required.
 	check_bool($self, 'required');
+
+	# Check size.
+	check_number($self, 'size');
 
 	# Check type.
 	check_required($self, 'type');
