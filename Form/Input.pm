@@ -33,6 +33,10 @@ has placeholder => (
 	is => 'ro',
 );
 
+has readonly => (
+	is => 'ro',
+);
+
 has required => (
 	is => 'ro',
 );
@@ -54,6 +58,9 @@ sub BUILD {
 
 	# Check checked.
 	check_bool($self, 'checked');
+
+	# Check readonly.
+	check_bool($self, 'readonly');
 
 	# Check required.
 	check_bool($self, 'required');
