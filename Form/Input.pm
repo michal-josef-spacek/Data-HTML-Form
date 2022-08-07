@@ -21,6 +21,10 @@ has css_class => (
 	is => 'ro',
 );
 
+has disabled => (
+	ro => 1,
+);
+
 has id => (
 	is => 'ro',
 );
@@ -58,6 +62,9 @@ sub BUILD {
 
 	# Check checked.
 	check_bool($self, 'checked');
+
+	# Check disabled.
+	check_bool($self, 'disabled');
 
 	# Check readonly.
 	check_bool($self, 'readonly');
