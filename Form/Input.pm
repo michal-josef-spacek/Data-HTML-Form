@@ -6,7 +6,7 @@ use warnings;
 use Error::Pure qw(err);
 use List::Util qw(none);
 use Mo qw(build is);
-use Mo::utils qw(check_bool check_number check_required);
+use Mo::utils qw(check_bool check_number);
 use Readonly;
 
 Readonly::Array our @TYPES => qw(checkbox submit text);
@@ -76,7 +76,9 @@ sub BUILD {
 	check_number($self, 'size');
 
 	# Check type.
-	check_required($self, 'type');
+	if (! defined $self->{'type'}) {
+		$self->{'type'} = 'text';
+	}
 	if (none { $self->{'type'} eq $_ } @TYPES) {
 		err "Parameter 'type' has bad value.";
 	}
