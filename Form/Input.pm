@@ -35,6 +35,14 @@ has label => (
 	is => 'ro',
 );
 
+has max => (
+	is => 'ro',
+);
+
+has min => (
+	is => 'ro',
+);
+
 has placeholder => (
 	is => 'ro',
 );
@@ -67,6 +75,12 @@ sub BUILD {
 
 	# Check disabled.
 	check_bool($self, 'disabled');
+
+	# Check max.
+	check_number($self, 'max');
+
+	# Check min.
+	check_number($self, 'min');
 
 	# Check readonly.
 	check_bool($self, 'readonly');
