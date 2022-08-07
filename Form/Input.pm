@@ -9,7 +9,9 @@ use Mo qw(build is);
 use Mo::utils qw(check_bool check_number);
 use Readonly;
 
-Readonly::Array our @TYPES => qw(checkbox submit text);
+Readonly::Array our @TYPES => qw(button checkbox color date datetime-local
+	email file hidden image month number password radio range reset search
+	submit tel text time url week);
 
 our $VERSION = 0.01;
 
