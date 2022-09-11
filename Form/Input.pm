@@ -24,7 +24,7 @@ has css_class => (
 );
 
 has disabled => (
-	ro => 1,
+	is => 'ro',
 );
 
 has id => (
