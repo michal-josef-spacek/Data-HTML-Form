@@ -58,7 +58,8 @@ sub BUILD {
 		$self->{'method'} = 'get';
 	}
 	if (none { $self->{'method'} eq $_ } @METHODS) {
-		err "Parameter 'method' has bad value.";
+		err "Parameter 'method' has bad value.",
+			'Value', $self->{'method'};
 	}
 
 	return;
