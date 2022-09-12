@@ -1,6 +1,6 @@
 TODO
 ====
-1. Doc.
+1. Doc for Data::HTML::Form::Input.
 2. Tests.
 4. Support for select to Input
 5. Add check for CSS class form?
