@@ -2,9 +2,10 @@ TODO
 ====
 1. Doc.
 2. Tests.
-3. Check Form->enctype
 4. Support for select to Input
 5.
 
 Applied
 =======
+3. Check Form->enctype
+OK [20220912] skim
