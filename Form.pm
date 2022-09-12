@@ -9,6 +9,11 @@ use Mo qw(build is);
 use Readonly;
 
 Readonly::Array our @METHODS => qw(get post);
+Readonly::Array our @ENCTYPES => (
+	'application/x-www-form-urlencoded',
+	'multipart/form-data',
+	'text/plain',
+);
 
 our $VERSION = 0.01;
 
@@ -38,6 +43,15 @@ has method => (
 
 sub BUILD {
 	my $self = shift;
+
+	# Check enctype.
+	if (defined $self->{'enctype') {
+		if (none { $self->{'enctype'} eq $_ } @ENCTYPES) {
+			err "Parameter 'enctype' has bad value.",
+				'Value', $self->{'enctype'},
+			;
+		}
+	}
 
 	# Check method.
 	if (! defined $self->{'method'}) {
