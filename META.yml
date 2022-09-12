@@ -19,6 +19,7 @@ meta-spec:
 name: Data-HTML-Form
 no_index:
   directory:
+    - examples
     - inc
     - t
     - xt
