@@ -15,7 +15,7 @@ Readonly::Array our @ENCTYPES => (
 	'text/plain',
 );
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 has action => (
 	is => 'ro',
@@ -283,6 +283,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
