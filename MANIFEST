@@ -23,6 +23,7 @@ README
 SIGNATURE
 t/Data-HTML-Form-Input/01-use.t
 t/Data-HTML-Form-Input/02-version.t
+t/Data-HTML-Form-Input/03-new.t
 t/Data-HTML-Form/01-use.t
 t/Data-HTML-Form/02-version.t
 t/Data-HTML-Form/03-new.t
