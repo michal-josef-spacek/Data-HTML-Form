@@ -4,7 +4,9 @@ TODO
 2. Tests.
 4. Support for select to Input
 5. Add check for CSS class form?
-6.
+6. Improve Input - https://www.w3schools.com/tags/tag_input.asp
+7. Fix check for min/max in Input (Could be date too)
+8.
 
 Applied
 =======
