@@ -1,4 +1,4 @@
-0.04
+0.04 2022-09-29T10:28:58+02:00
  - Add tests for Data::HTML::Form.
  - Fix minimal dependency for Mo::utils.
 
