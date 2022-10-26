@@ -7,7 +7,10 @@ TODO
 6. Improve Input - https://www.w3schools.com/tags/tag_input.asp
 7. Fix check for min/max in Input (Could be date too)
 8. Add optgroup to Select
-9.
+9. Doc for Select.
+10. Doc for Option.
+11. Doc for Input.
+12.
 
 Applied
 =======
