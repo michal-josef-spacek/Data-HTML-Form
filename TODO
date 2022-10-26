@@ -6,7 +6,8 @@ TODO
 5. Add check for CSS class form?
 6. Improve Input - https://www.w3schools.com/tags/tag_input.asp
 7. Fix check for min/max in Input (Could be date too)
-8.
+8. Add optgroup to Select
+9.
 
 Applied
 =======
