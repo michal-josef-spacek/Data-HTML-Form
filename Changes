@@ -1,4 +1,5 @@
 0.05
+ - Add Select and Option objects.
 
 0.04 2022-09-29T10:28:58+02:00
  - Add tests for Data::HTML::Form.
