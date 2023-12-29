@@ -183,17 +183,23 @@ Returns string.
 
 =head2 C<id>
 
+ my $id = $obj->id;
+
 Get form identifier.
 
 Returns string.
 
 =head2 C<label>
 
+ my $label = $obj->label;
+
 Get form label.
 
 Returns string.
 
 =head2 C<method>
+
+ my $method = $obj->method;
 
 Get form method.
 

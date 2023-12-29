@@ -92,16 +92,22 @@ METHODS
     Returns string.
 
   "id"
+     my $id = $obj->id;
+
     Get form identifier.
 
     Returns string.
 
   "label"
+     my $label = $obj->label;
+
     Get form label.
 
     Returns string.
 
   "method"
+     my $method = $obj->method;
+
     Get form method.
 
     Returns string.
