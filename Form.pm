@@ -97,8 +97,6 @@ Data::HTML::Form - Data object for HTML form.
 
 Constructor.
 
-Returns instance of object.
-
 =over 8
 
 =item * C<action>
@@ -155,6 +153,8 @@ Default value is 'get'.
 Possible methods are: get and post
 
 =back
+
+Returns instance of object.
 
 =head2 C<action>
 

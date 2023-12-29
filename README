@@ -18,8 +18,6 @@ METHODS
 
     Constructor.
 
-    Returns instance of object.
-
     *       "action"
 
             Form action.
@@ -68,6 +66,8 @@ METHODS
             Default value is 'get'.
 
             Possible methods are: get and post
+
+    Returns instance of object.
 
   "action"
      my $action = $obj->action;
