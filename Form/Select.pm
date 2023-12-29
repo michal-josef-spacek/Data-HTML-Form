@@ -6,7 +6,7 @@ use warnings;
 use Mo qw(build default is);
 use Mo::utils qw(check_array_object check_bool check_number);
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 has autofocus => (
 	is => 'ro',
