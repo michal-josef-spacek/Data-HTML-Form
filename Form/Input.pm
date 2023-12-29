@@ -16,7 +16,7 @@ Readonly::Array our @TYPES => qw(button checkbox color date datetime-local
 our $VERSION = 0.07;
 
 has autofocus => (
-	ro => 1,
+	is => 'ro',
 );
 
 has checked => (

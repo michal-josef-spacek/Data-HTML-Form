@@ -19,11 +19,11 @@ has css_class => (
 
 has data => (
 	default => [],
-	ro => 1,
+	is => 'ro',
 );
 
 has data_type => (
-	ro => 1,
+	is => 'ro',
 );
 
 has disabled => (
